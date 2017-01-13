@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!-- Resources about dimensions in dp-->
+    <dimen name="no_dim">0dp</dimen>
+    <dimen name="low_dim">8dp</dimen>
+    <dimen name="default_dim">16dp</dimen>
+    <dimen name="title_dim">24dp</dimen>
+    <dimen name="high_dim">48dp</dimen>
+
+    <!-- Resources about scales in sp -->
+    <dimen name="low_scale">8sp</dimen>
+    <dimen name="default_scale">16sp</dimen>
+    <dimen name="mid_scale">20sp</dimen>
+    <dimen name="title_scale">24sp</dimen>
+</resources>

@@ -1,0 +1,187 @@
+<resources>
+    <string name="app_name">JavaCupOQuiz</string>
+    <string name="welcome_string">Welcome to Java and Aptitude Quiz</string>
+    <string name="submit">Submit</string>
+    <string name="reset">Reset</string>
+    <string name="answer">Write Your Answer</string>
+    <string name="text_length">30</string>
+    <string name="instructions">Instructions</string>
+    <string name="instruction_first">1. This quiz contains ten questions.</string>
+    <string name="instruction_second">2. Every correct answer carry one mark.</string>
+    <string name="instruction_third">3. Reset button will be available after submitting test.</string>
+    <string name="best_luck">Best of Luck.</string>
+    <string name="share">Share</string>
+
+    <!-- Question1 String name -->
+    <string name="que_1">Q1.  In how many ways can we select 4 spoons and 3 plates from  8 spoons and 9 plates?</string>
+
+    <!-- Questing 1 Options  and Answer-->
+    <string name="que1_opt1">8550</string>
+    <string name="que1_opt2">5850</string>
+    <string name="que1_opt3">5880</string>
+    <string name="que1_opt4">8550</string>
+    <string name="que1_answer">Answer Description:\nTo make a group of 4 spoons ans 3 plates be made put of total of 8 spoons and 9 plates,\n
+    we have to select 4 spoons from 8 spoons and 3 plates from 9 plates.\n
+    \n
+    No. of ways in which 4 spoons can be selected from 8 spoons = 8C4 = 70\n
+    \n
+    No. of ways in which 3 plates can be selected from 9 plates = 9C3 = 84\n
+    \n
+    No. of ways in which the group can be made = 70 x 84 = 5880</string>
+
+    <!-- Question2 String name -->
+    <string name="que_2">Q2.  What should come in place of question mark(?) in the following number series?
+        \n\n18 \t\t20 \t\t44 \t\t138 \t\t560 \t\t2810 \t\t?</string>
+    <!-- Question 2 Options and Answer-->
+    <string name="que2_opt1">16818</string>
+    <string name="que2_opt2">16836</string>
+    <string name="que2_opt3">16854</string>
+    <string name="que2_opt4">16872</string>
+    <string name="que2_answer">Answer Description:\nThe Pattern of the given series is
+    20 = 18 x 1 + 2 x 1\n
+    44 = 20 x 2 + 2 x 2\n
+    138 = 44 x 3 + 2 x 3\n
+    560 = 138 x 4 + 2 x 4\n
+    2810 = 560 x 5 + 2 x 5\n
+    \n
+    Ni+1 = Ni x i + 2 x i\n
+    \n
+    2810 x 6 + 2 x 6 = 16872</string>
+
+    <!-- Question3 String name -->
+    <string name="que_3">Q3.  What should come in place of question mark(?) in the following number series?
+    \n\n 2 \t\t5 \t\t7 \t\t12 \t\t19 \t\t31 \t\t50 \t\t?</string>
+    <!-- Question 3 Options and Answer -->
+    <string name="que3_opt1">53</string>
+    <string name="que3_opt2">81</string>
+    <string name="que3_opt3">69</string>
+    <string name="que3_opt4">74</string>
+    <string name="que3_answer">Answer Description:\nThe Pattern of the given series is\n
+    2 + 5 = 7\n
+    5 + 7 = 12\n
+    7 + 12 = 19\n
+    12 + 19 = 31\n
+    19 + 31 = 50\n
+    31 + 50 = 81</string>
+
+    <!-- Question4 String name -->
+    <string name="que_4">Q4.  Given:\n
+    1. public class Threads2 implements Runnable {\n
+    2.\n
+    3. public void run() {\n
+    4. System.out.println("run.");\n
+    5. throw new RuntimeException("Problem");\n
+    6. }\n
+    7. public static void main(String[] args) {\n
+    8. Thread t = new Thread(new Threads2());\n
+    9. t.start();\n
+    10. System.out.println("End of method.");\n
+    11. }\n
+    12. }\n
+    Which two can be results? (Choose two.)</string>
+    <!-- Question 4 Options and Answer-->
+    <string name="que4_opt1">java.lang.RuntimeException: Problem</string>
+    <string name="que4_opt2">run.\njava.lang.RuntimeException: Problem</string>
+    <string name="que4_opt3">End of method.\njava.lang.RuntimeException: Problem</string>
+    <string name="que4_opt4">End of method.\nrun.\n
+    java.lang.RuntimeException: Problem</string>
+    <string name="que4_opt5">run.\njava.lang.RuntimeException: Problem\n
+    End of method.</string>
+    <string name="que4_answer">Answer:\nEnd of method.
+    run.\n
+    java.lang.RuntimeException: Problem\n\n
+    run.\n
+    java.lang.RuntimeException: Problem\n
+    End of method.</string>
+
+    <!-- Question5 String name -->
+    <string name="que_5">Q5.  Given:\n
+    1. interface TestA { String toString(); }\n
+    2. public class Test {\n
+    3. public static void main(String[] args) {\n
+    4. System.out.println(new TestA() {\n
+    5. public String toString() { return "test"; }\n
+    6. });\n
+    7. }\n
+    8. }\n
+    What is the result?</string>
+    <!-- Question 5 Options and Answer-->
+    <string name="que5_opt1">test</string>
+    <string name="que5_opt2">null</string>
+    <string name="que5_opt3">An exception is thrown at runtime.</string>
+    <string name="que5_opt4">Compilation fails because of an error in line 1.</string>
+    <string name="que5_opt5">Compilation fails because of an error in line 4.</string>
+    <string name="que5_answer">Answer:\ntest</string>
+
+    <!-- Question6 String name -->
+    <string name="que_6">Q6.  You have a java file name Test.java. Test.java needs access to a class contained in app.jar in "exam" directory.\n
+        Which of the follwing command set classpath to compile clean?\n
+    Options are</string>
+    <!-- Question 6 Options and Answer-->
+    <string name="que6_opt1">javac -classpath exam/app.jar Test.java</string>
+    <string name="que6_opt2">javac -classpath app.jar Test.java</string>
+    <string name="que6_opt3">javac -classpath exam Test.java</string>
+    <string name="que6_opt4">None of the above</string>
+    <string name="que6_answer">Answer:\n
+    javac -classpath exam/app.jar Test.java is the correct command to set exam/app.jar in
+    classpath.</string>
+
+    <!-- Question7 String name -->
+    <string name="que_7">Q7.  What will be the result of the following code:\n
+    1. public class Test {\n
+    2. public static void main(String... args) throws Exception {\n
+    3. Integer i = 34;\n
+    4. int l = 34;\n
+    5. if(i.equals(l)){\n
+    6. System.out.println(true);\n
+    7. }else{\n
+    8. System.out.println(false);\n
+    9. }\n
+    10. }\n
+    11. }\n
+    Options are</string>
+    <!-- Question 7 Options and Answer-->
+    <string name="que7_opt1">true</string>
+    <string name="que7_opt2">false</string>
+    <string name="que7_opt3">Compile error</string>
+    <string name="que7_opt4">None of the above</string>
+
+    <string name="que7_answer">Answer:\n
+    true is correct answer because\n equals() method for the integer wrappers will only return true \n
+    if the two primitive types and the two values are equal.</string>
+
+    <!-- Question8 String name -->
+    <string name="que_8">Q8.  Which of the following are Java keywords?</string>
+    <!-- Question 8 Options and Answer-->
+    <string name="que8_opt1">array</string>
+    <string name="que8_opt2">boolean</string>
+    <string name="que8_opt3">Integer</string>
+    <string name="que8_opt4">protect</string>
+    <string name="que8_answer">Answer:\nJava keywords are
+    array and boolean. Where Integer is referenced data type.\n
+    there is no java keyword named protect. Java contains access modifier protected. </string>
+
+    <!-- Question9 String name -->
+    <string name="que_9">Q9.  Given:\n
+    1. public class MyClass{\n
+	2. public static void main(String... args){\n
+	3.	int a = 3, b = 2;\n
+	4.	a = a * b ;\n
+	5.	b = a / b ;\n
+	6.	a = a / b ;\n
+	7.	System.out.println(a+"\" "\"+b); \n
+	8. }\n
+    9. }\n
+    What will be the output?</string>
+    <!-- Question 9 Answer-->
+    <string name="que9_answer">Answer:\n2 3</string>
+
+    <!-- Question10 String name -->
+    <string name="que_10">Q10.  Is Java Virtual Machine platform dependent or independent?</string>
+    <!-- Questin 10 Answer -->
+    <string name="que10_answer">Answer:\nPlatform dependent\n
+    only Java language is platform independent, but its runtime enviroment, or JVM, is platform dependent,\n
+        it is written separately for each OS. So we can say the Java language is platform independent,\n
+        but its runtime environment is platform dependent</string>
+
+</resources>
