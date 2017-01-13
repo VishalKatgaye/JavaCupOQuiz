@@ -331,7 +331,7 @@ public class MainActivity extends AppCompatActivity {
         String answer = que10Answer.getText().toString();
         if (answer.toLowerCase().trim().contains("platform dependent")) {
             return true;
-        } else if (answer.toLowerCase().contains("dependent"))
+        } else if (answer.toLowerCase().trim().contains("dependent"))
             return true;
         else
             return false;
